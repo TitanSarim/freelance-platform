@@ -1,0 +1,51 @@
+.need_card_container{
+    position: relative;
+    height: max-content;
+}
+
+.need_card_container_header{
+    position: relative;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.need_card_container_header p{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+
+
+.need_card_container_tabs{
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.need_card_container_tab{
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 24%;
+    padding: 15px 20px 15px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.need_card_container_tab p{
+    font-size: 19px;
+    font-weight: 500;
+    color: #202020;
+}
+
+.need_card_container_tab span{
+    color: rgb(99, 99, 99);
+}
+
+/* #39bda7 */
+.need_card_container_icon{
+    color: #39bda7;
+}

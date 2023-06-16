@@ -1,0 +1,199 @@
+.home__project__container{
+    position: relative;
+    height: 100%;
+    margin-top: 80px;
+}
+
+.home__project__container__header p{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+
+/* tabs starts */
+.home__project__container__services__tabs{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.home__project__container__services__tabs p{
+    width: 30%;
+}
+
+.home__project__container__services__tab__list{
+    position: relative;
+    display: flex !important;
+    text-transform: capitalize;
+    border-radius: 10px;
+    background-color: transparent !important;
+}
+
+.home__project__container__services__tab__selected p{
+    font-weight: 400 !important;
+    position: relative !important;
+    width: max-content !important;
+    text-align: center;
+    padding: 6px 0px 6px 0px;
+}
+
+
+/* tabs ends */
+
+
+
+.home__project__section{
+    position: relative !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    height: max-content !important;
+    gap: 40px !important;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px 0px 0px !important;
+}
+
+.home__project__mapping{
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid rgb(194, 194, 194); */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    margin-bottom: 40px;
+}
+
+.home__project__mapping__images{
+    position: relative;
+    width: fit-content;
+    max-width: 360px;
+    min-width: 360px;
+}
+
+.home__project__mapping__image{
+    position: relative;
+    border-radius: 10px;
+    max-height: 219px;
+    min-height: 219px;
+    cursor: grab;
+}
+
+.home__project__mapping__content{
+    position: relative;
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.home__project__mapping__content__category{
+    position: relative;
+    text-transform: capitalize;
+    color: rgb(144, 144, 144);
+    font-size: 14px;
+}
+
+.home__project__mapping__content__heading{
+    position: relative;
+    max-width: 270px;
+    min-width: 270px;
+    font-size: 16.5px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(61, 61, 61);
+    transition: all 500ms;
+}
+
+.home__project__mapping__content__heading:hover{
+    transform: scale(1.01);
+    color: rgb(0, 66, 84);
+
+}
+
+.home__project__mapping__reviews{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    right: 7px;
+}
+
+.home__project__mapping__no__reviews{
+    padding: 6px 0px;
+    color: rgb(144, 144, 144);
+
+}
+
+.home__project__mapping__reviews__span{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.home__project__mapping__reviews__span p{
+    font-weight: 500;
+}
+
+.home__project__mapping__reviews h6{
+    font-size: 14px;
+    color: rgb(144, 144, 144);
+}
+
+.home__project__mapping__content__user{
+    position: relative;
+    padding: 12px 0px 2px 0px;
+    border-top: 1px solid rgb(213, 213, 213);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.home__project__mapping__content__user__name_img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.home__project__mapping__content__user__name_img p{
+    position: relative;
+    font-size: 15px;
+    color: rgb(61, 61, 61);
+}
+
+.home__project__mapping__content__user__name_img img{
+    position: relative;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.home__project__mapping__content__user__span{
+    position: relative;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.home__project__mapping__content__user__span span{
+    color: rgb(144, 144, 144);
+    font-size: 15px;
+}
+
+.home__project__mapping__content__user__span p{
+    font-weight: 500;
+}

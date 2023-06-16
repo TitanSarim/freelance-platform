@@ -1,0 +1,390 @@
+.project__packages__container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.project__packages__user__detail{
+    position: relative;
+    display: flex;
+    bottom: 90px;
+    height: 130px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    flex-direction: row !important;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0px 12px !important;
+}
+
+.project__packages__user__detail__country, 
+.project__packages__user__detail__language,
+.project__packages__user__detail__response{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform:capitalize;
+}
+
+.project__packages__user__detail__icon{
+    color: rgb(0, 66, 84);
+}
+
+.project__packages__user__detail__settings span{
+    color: rgb(60, 60, 60) !important;
+    font-weight: 500 !important;
+}
+
+.project__packages__user__detail__settings{
+    color: rgb(113, 113, 113);
+}
+
+/* project boxes */
+.project__packages__package__box__section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px 13px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.project__packages__package__box__header__price{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(25, 152, 0);
+
+}
+
+.project__packages__box__selection__detail{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.project__packeges__box__type__seclection{
+    position: relative;
+    top: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 257px;
+    align-items: flex-start;
+}
+
+.project__packages__package__box__one{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 8px 0px;
+}
+
+.project__packages__package__select__details__divider{
+    position: relative;
+    background-color: rgb(197, 197, 197);
+    height: 1px;
+    width: 340px;
+}
+
+.project__packages__package__select__details{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    top: 9px;
+    padding-bottom: 18px;
+    text-transform: capitalize;
+}
+
+.project__packages__package__select__type{
+    position: relative;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.project__packages__package__select__quote{
+    font-weight: 400;
+    color: rgb(99, 99, 99);
+}
+
+.project__packages__package__select__services{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.project__packages__package__select__services > p{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.project__packages__package__select__services > p >span{
+    color: rgb(25, 152, 0);
+}
+
+.project__packages__package__select__revisions{
+    font-weight: 500;
+}
+
+.project__packages__package__select__price{
+    font-weight: 500;
+    font-size: 19px;
+    color: rgb(25, 152, 0);
+}
+
+/* buy btn */
+.project__packages__user__buy__project{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__packages__user__buy__project__btn {
+    --color: rgb(0, 66, 84);
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12em;
+    height: 3em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #39bda7;
+    color: white;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+   
+.project__packages__user__buy__project__btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 270px;
+    border-radius: 50%;
+   }
+   
+.project__packages__user__buy__project__btn:hover {
+    color: #fff;
+}
+
+
+.project__packages__user__buy__project__btn:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+.project__packages__user__buy__project__btn:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+.project__packages__user__buy__project__btn:active:before {
+    background: rgb(0, 66, 84);
+    transition: background 0s;
+}
+
+/* end by btn */
+
+
+/* dialogue starts*/
+.dialogue-animation-enter {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.dialogue-animation-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+}
+  
+.dialogue-animation-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+  
+.dialogue-animation-exit-active {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.create__order__dialogue{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 100%;
+    height: max-content;
+    width: max-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px 13px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 500ms;
+}
+
+.create__order__dialogue__close__btn{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.create__order__dialogue__close__btn svg{
+    color: tomato;
+    transition: all 500ms;
+}
+
+.create__order__dialogue__close__btn svg:hover{
+    transform: scale(1.08);
+    color: rgb(255, 44, 6);
+}
+
+.create__order__dialogue__requirements{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.create__order__dialogue__requirements p{
+    position: relative;
+    font-size: 24px;
+    bottom: 30px;
+    width: fit-content;
+    color: rgb(0, 66, 84);
+    font-weight: 500;
+}
+
+.create__order__dialogue__requirements textarea{
+    position: relative;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 8px;
+    padding: 5px 8px;
+    transition: all 500ms;
+    min-height: 250px;
+    width: 600px;
+}
+
+.create__order__dialogue__requirements textarea:focus{
+    outline: none !important;
+    border: 1px solid rgb(0, 66, 84);
+}
+
+
+.create__order__dialogue__requirements__uploadfiles__container{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create__order__dialogue__requirements__uploadfiles__container ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    top: 10px;
+}
+
+.create__order__dialogue__requirements__uploaded__files{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(215, 215, 215, 0.846);
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 70px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.remove__files{
+    position: absolute;
+    left: 48px;
+    bottom: 60px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: rgba(209, 209, 209, 0.2) 0px 2px 8px 0px;
+    font-weight: 500;
+    color: rgb(0, 66, 84);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+.create__order__dialogue__requirements__uploaded__files span{
+    color: rgb(0, 66, 84);
+    font-weight: 500;
+    font-size: 14px !important;
+}
+
+.create__order__dialogue__requirements__uploadfiles {
+    color: transparent;
+    transition: all 500ms;
+}
+
+.create__order__dialogue__requirements__uploadfiles::-webkit-file-upload-button {
+    visibility: hidden;
+}
+  
+.create__order__dialogue__requirements__uploadfiles::before {
+    content: "Upload File";
+    color: #fff;
+    display: inline-block;
+    background: rgb(0, 66, 84);
+    padding: 10px 22px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 6px;
+    outline: none;
+}
+
+.create__order__dialogue__requirements__uploadfiles:hover{
+    transform: scale(1.01);
+}
+
+
+.create__order__dialogue__payment__btn {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* rgb(0, 66, 84); */
+
+
+
+
+/* dialogue ends */

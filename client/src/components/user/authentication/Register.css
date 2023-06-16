@@ -1,0 +1,189 @@
+.user__register__container{
+    position: relative;
+    display: flex;
+    margin: auto;
+    top: 100px;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 10px;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.user__register__section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    width: 100% !important;
+}
+
+.user__register__header{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.user__register__header>p{
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.user__register__header__regsiter{
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.user__register__header__regsiter>p{
+    color: rgb(123, 123, 123);
+}
+
+.user__register__header__regsiter>span{
+    color: rgb(0, 66, 84);
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.user__register__header__regsiter>span:hover{
+    transform: scale(1.02);
+    color: tomato;
+}
+
+
+/* form */
+.user__register__body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 14px 0px;
+    width: 100%;
+}
+
+.user__register__body__form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user__register__body__names,
+.user__register__body__username_age,
+.user__register__body__country{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.user__register__body__password{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user__register__body__password span{
+    font-size: 14px;
+    font-weight: 300;
+    color: #bcbcbc;
+}
+
+/* input starts */
+
+.user__register__body__name_single{
+    width: 100%;
+    position: relative;
+}
+
+.user__register__body__name_single input{
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 1px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 4px;
+  width: 100%;
+  background-color: white !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus{
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.user__register__body__name_single label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.3em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.user__register__body__name_single :is(input:focus, input:valid)~label{
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: .5em;
+  padding: 0.4em;
+  background-color: #ffffff;
+  color: rgb(0, 66, 84);
+  font-weight: 500;
+}
+
+.user__register__body__name_single :is(input:focus, input:valid){
+  border-color: rgb(0, 66, 84);
+}
+
+
+.warning-form{
+    color: red;
+}
+
+/* btn */
+.user__register__footer__submit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+    cursor: pointer;
+    background-color: rgb(0, 66, 84);
+    width: max-content;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: all 500ms;
+}
+
+.user__register__footer__submit button{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.user__register__footer__submit:hover{
+    transform: scale(1.02);
+}
+
+/* btn ends */

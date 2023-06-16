@@ -1,0 +1,68 @@
+access token inside controller
+
+const userId = req.user.userid;
+const userName = req.user.username;
+
+
+const suserid = req.userData.suserid
+
+
+ALTER TABLE orders ADD COLUMN updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+
+
+pool.query(`ALTER TABLE order_delivery MODIFY COLUMN text VARCHAR(255), MODIFY COLUMN files JSON`)
+
+
+???
+
+try {
+
+        const projectid = req.params.id;
+
+        const connection = await pool.getConnection();
+
+        const [project] = await connection.execute('SELECT * FROM project WHERE projectid = ?', [projectid]);
+
+        if (!project.length) {
+            return next(new ErrorHandler('Project not found', 404));
+          }
+        
+        const [projectTypes] = await connection.execute('SELECT * FROM projecttype WHERE projectid = ?', [projectid]);
+
+        const types = projectTypes.map((type) => ({
+            id: type.projecttypeid,
+            type: type.type,
+            quote: type.quote,
+            price: type.price,
+            serviceone: type.serviceone,
+            servicetwo: type.servicetwo,
+            servicethree: type.servicethree,
+            servicefour: type.servicefour,
+            deliverydays: type.deliverydays,
+            revisions: type.revisions,
+        }));
+      
+        const projectDetial = {
+            id: project[0].projectid,
+            userid: project[0].userid,
+            suserid: project[0].suserid,
+            heading: project[0].heading,
+            category: JSON.parse(project[0].category),
+            subcategory: JSON.parse(project[0].subcategory),
+            description: project[0].description,
+            tags: JSON.parse(project[0].tags),
+            images: JSON.parse(project[0].images),
+            types,
+        };
+      
+
+        res.status(200).json({
+            success: true,
+            message: 'Project is Retrieved',
+            projectDetial: projectDetial
+        })
+
+
+    } 
+
+      ??/
